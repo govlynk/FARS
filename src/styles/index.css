@@ -1,0 +1,58 @@
+:root {
+  --primary-color: #1976d2;
+  --secondary-color: #dc004e;
+  --background-color: #f5f5f5;
+  --text-color: #333;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background-color: var(--background-color);
+  color: var(--text-color);
+}
+
+.app-container {
+  display: flex;
+  min-height: 100vh;
+}
+
+.main-content {
+  flex-grow: 1;
+  padding: 2rem;
+  margin-left: 250px;
+}
+
+.sidebar-header {
+  padding: 1rem;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.user-info {
+  margin-top: 0.5rem;
+  font-size: 0.875rem;
+}
+
+.user-info .role {
+  color: #666;
+  display: block;
+  font-size: 0.75rem;
+}
+
+.activities-list {
+  padding: 1rem;
+}
+
+.activity-item {
+  padding: 0.75rem 0;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.12);
+}
+
+.activity-item:last-child {
+  border-bottom: none;
+}
